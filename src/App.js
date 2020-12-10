@@ -18,7 +18,7 @@ function App() {
         <hr />
         <ChannelList />
         <hr/>
-        <TrendingShows />
+        <TrendingShows total='10'/>
       </div>
       <Footer></Footer>
     </div>
