@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class MyProfile extends Component {
 
@@ -15,8 +15,9 @@ class MyProfile extends Component {
   }
 
   render() {
+    // we use fragment to return multiple child elements
     return (
-      <div>
+      <>
         <h2>Update Profile | Two Way Binding</h2>
         {/* the following input field without onChange will show error in console. 
           it will be immutable. if you want to edit this field have onChange */}
@@ -27,8 +28,7 @@ class MyProfile extends Component {
 
         {/* The following will work and it would be mutable. */}
         <input type="text" defaultValue='Testing' />
-        
-      </div>
+      </>
     )
   }
 }

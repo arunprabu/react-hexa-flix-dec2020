@@ -9,6 +9,7 @@ import MyProfile from './containers/MyProfile/MyProfile';
 import Subscription from './components/Subscription/Subscription';
 import LifeCycleDemo from './containers/LifeCycleDemo/LifeCycleDemo';
 import ContactForm from './containers/ContactForm/ContactForm';
+import WithLastLogin from './hoc/WithLastLogin';
 
 // Comp should mandatorily return JSX.
 // functional component with named fn 
@@ -31,6 +32,13 @@ function App() {
         <LifeCycleDemo info='demo'/>
         <hr/>
         <ContactForm />
+
+        <hr/>
+        <WithLastLogin>Last Login: 4/Dec/2020</WithLastLogin>
+        <WithLastLogin>
+          <div>Testing</div>
+          <div>Random</div>
+        </WithLastLogin>
       </div>
       <Footer></Footer>
     </div>
