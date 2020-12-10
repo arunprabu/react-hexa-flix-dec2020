@@ -8,6 +8,7 @@ import TrendingShows from './containers/TrendingShows/TrendingShows';
 import MyProfile from './containers/MyProfile/MyProfile';
 import Subscription from './components/Subscription/Subscription';
 import LifeCycleDemo from './containers/LifeCycleDemo/LifeCycleDemo';
+import ContactForm from './containers/ContactForm/ContactForm';
 
 // Comp should mandatorily return JSX.
 // functional component with named fn 
@@ -28,6 +29,8 @@ function App() {
         <Subscription/>
         <hr />
         <LifeCycleDemo info='demo'/>
+        <hr/>
+        <ContactForm />
       </div>
       <Footer></Footer>
     </div>
